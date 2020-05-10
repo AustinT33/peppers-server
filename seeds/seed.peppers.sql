@@ -18,8 +18,8 @@ VALUES
     ('Hatch Chili', 'Very large elongated fruits, generally dark green that will eventually mature to dark almost blood red, these fruits have a moderate punch to their crunch, has high yield on most plants.',('https://imgur.com/6e2g5Zq')),
     ('Jalapeno', 'Classic pepper, widely used in many dishes or by itself, has a moderate heat to it, will ripen from dark green to yellow to red.',('https://imgur.com/6e2g5Zq')),
     ('Greek Pepperoncini', 'Juicy and colorful peppers that have a medium strength kick to them, goes great with many italian or greek styled dishes or just by themselves!',('https://imgur.com/6e2g5Zq')),
-    ("Maule's Red Cayenne", 'This Cayenne has quite the kick to it, going from bright green to deep red, these peppers look crazy with all sorts of curls and twists, very fun to grow!',('https://imgur.com/6e2g5Zq')),
-    ('Orange Habanero', 'Spice level on the higher end of this category, this Habanero is a classic one that will start green into yellow and mature into a deep or bright orange when ripe.',);
+    ('Maules Red Cayenne', 'This Cayenne has quite the kick to it, going from bright green to deep red, these peppers look crazy with all sorts of curls and twists, very fun to grow!',('https://imgur.com/6e2g5Zq')),
+    ('Orange Habanero', 'Spice level on the higher end of this category, this Habanero is a classic one that will start green into yellow and mature into a deep or bright orange when ripe.',('https://imgur.com/6e2g5Zq'));
 
 INSERT INTO crazypeppers (name, description, image)
 VALUES
@@ -27,6 +27,6 @@ VALUES
     ('Caribbean Red Habanero', 'This particular Habanero is one of the hotter strains, coming from the exotic Caribbean, these peppers pack heat, they will mature into a deep dark red color when ripe.',('https://imgur.com/6e2g5Zq')),
     ('Firecracker', 'These little peppers are delightful to grow as they are very colorful and grow straight up! Their colors range from green, yellow, red, orange, and even purple, they look amazing in the garden and have a very high yield and production rate.',('https://imgur.com/6e2g5Zq'));
 
-INSERT INTO crazypeppers (name, description, image)
+INSERT INTO hybridpeppers (name, description, image)
 VALUES
     ('n/a', 'n/a',('https://imgur.com/6e2g5Zq'));
