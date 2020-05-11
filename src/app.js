@@ -6,6 +6,9 @@ const knex = require('knex')
 const helmet = require('helmet')
 const { NODE_ENV } = require('./config')
 const SweetPepperRouter = require('./sweetpeppers/sweet-pepper-router')
+const HotPepperRouter = require('./hotpeppers/hot-pepper-router')
+const CrazyPepperRouter = require('./crazypeppers/crazy-pepper-router')
+const HybridPepperRouter = require('./hybridpeppers/hybrid-pepper-router')
 
 const app = express()
 
@@ -18,6 +21,9 @@ app.use(helmet())
 app.use(cors())
 
 app.use('/api/sweet_peppers', SweetPepperRouter);
+app.use('/api/hot_peppers', HotPepperRouter);
+app.use('/api/crazy_peppers', CrazyPepperRouter);
+app.use('/api/hybrid_peppers', HybridPepperRouter);
 
 app.use(function errorHandler(error, req, res, next) {
     let response
