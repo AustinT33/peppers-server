@@ -2,8 +2,10 @@ require('dotenv').config()
 const express = require('express')
 const morgan = require('morgan')
 const cors = require('cors')
+const knex = require('knex')
 const helmet = require('helmet')
 const { NODE_ENV } = require('./config')
+const SweetPepperRouter = require('./sweetpeppers/sweet-pepper-router')
 
 const app = express()
 
@@ -15,9 +17,7 @@ app.use(morgan(morganOption))
 app.use(helmet())
 app.use(cors())
 
-app.get('/', (req, res) => {
-    res.send('Hello, boilerplate!')
-})
+app.use('/api/sweet_peppers', SweetPepperRouter);
 
 app.use(function errorHandler(error, req, res, next) {
     let response
