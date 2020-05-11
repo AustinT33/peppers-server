@@ -1,6 +1,6 @@
 -- 'https://i.imgur.com/5D5DTOA.jpg'  hydro purple bell
 -- 'https://i.imgur.com/RVRPnwKl.jpg'  coming soon img
--- 'https://i.imgur.com/dePvzY2.jpg'  trinidad scorp butch t
+-- 'https://i.imgur.com/hGVvEO6l.jpg' trinidad scorp butch t
 
 
 INSERT INTO sweetpeppers (name, description, image)
@@ -23,7 +23,7 @@ VALUES
 
 INSERT INTO crazypeppers (name, description, image)
 VALUES
-    ('Butch T. Trinidad Scorpion', 'Labeled the second hottest pepper next to the Carolina Reaper, this pepper is especially fun to grow due to the exotic characteristics of the fruit, these peppers are wicked looking with a sharp stinger coming out of the bottom, they start bright green and mature into a bright red color.',('https://i.imgur.com/dePvzY2l.jpg')),
+    ('Butch T. Trinidad Scorpion', 'Labeled the second hottest pepper next to the Carolina Reaper, this pepper is especially fun to grow due to the exotic characteristics of the fruit, these peppers are wicked looking with a sharp stinger coming out of the bottom, they start bright green and mature into a bright red color.',('https://i.imgur.com/hGVvEO6l.jpg')),
     ('Caribbean Red Habanero', 'This particular Habanero is one of the hotter strains, coming from the exotic Caribbean, these peppers pack heat, they will mature into a deep dark red color when ripe.',('https://i.imgur.com/RVRPnwKl.jpg')),
     ('Firecracker', 'These little peppers are delightful to grow as they are very colorful and grow straight up! Their colors range from green, yellow, red, orange, and even purple, they look amazing in the garden and have a very high yield and production rate.',('https://i.imgur.com/RVRPnwKl.jpg'));
 
