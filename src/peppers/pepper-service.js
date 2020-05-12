@@ -23,6 +23,13 @@ const PepperService = {
       .where('category', 'hybrid')
       .from('peppers');
   },
+  getById(knex, id) {
+    return knex
+      .from('peppers')
+      .select('*')
+      .where('id', id)
+      .first()
+  },
 };
 
 module.exports = PepperService;
