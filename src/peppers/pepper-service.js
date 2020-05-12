@@ -23,6 +23,11 @@ const PepperService = {
       .where('category', 'hybrid')
       .from('peppers');
   },
+  getAllPeppers(knex) {
+  return knex
+    .select('*')
+    .from('peppers');
+  },
   getById(knex, id) {
     return knex
       .from('peppers')

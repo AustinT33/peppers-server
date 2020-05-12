@@ -22,3 +22,4 @@ CrazyPepperService.getAllCrazyPeppers(knexInstance)
 HybridPepperService.getAllHybridPeppers(knexInstance)
 .then(peppers => console.log(peppers));
 
+

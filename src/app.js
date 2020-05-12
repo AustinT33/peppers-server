@@ -11,6 +11,7 @@ const SweetPepperRouter = require('./peppers/sweet-pepper-router');
 const HotPepperRouter = require('./peppers/hot-pepper-router');
 const CrazyPepperRouter = require('./peppers/crazy-pepper-router');
 const HybridPepperRouter = require('./peppers/hybrid-pepper-router');
+const PepperRouter = require('./peppers/pepper-router');
 
 const app = express();
 
@@ -38,6 +39,10 @@ app.use(
 app.use(
   '/api/hybrid_peppers',
   HybridPepperRouter
+);
+app.use(
+  '/api/peppers',
+  PepperRouter
 );
 
 app.use(function errorHandler(

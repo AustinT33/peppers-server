@@ -1,7 +1,7 @@
 const express = require('express');
 const PepperService = require('./pepper-service');
 
-const SweetRouter = express.Router();
+const PepperRouter = express.Router();
 const bodyParser = express.json();
 
 const serializePepper = (pepper) => ({
@@ -11,12 +11,12 @@ const serializePepper = (pepper) => ({
   image: pepper.image,
 });
 
-SweetRouter.route('/').get(
+PepperRouter.route('/').get(
   (req, res, next) => {
     const knexInstance = req.app.get(
       'db'
     );
-    PepperService.getAllSweetPeppers(
+    PepperService.getAllPeppers(
       knexInstance
     )
       .then((peppers) => {
@@ -28,7 +28,7 @@ SweetRouter.route('/').get(
   }
 );
 
-SweetRouter
+PepperRouter
   .route('/:id')
   .all((req, res, next) => {
     PepperService.getById(
@@ -50,4 +50,4 @@ SweetRouter
     res.json(serializePepper(res.pepper))
   });
 
-module.exports = SweetRouter;
+module.exports = PepperRouter;
