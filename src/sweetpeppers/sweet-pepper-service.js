@@ -1,7 +1,3 @@
-const SweetPepperService = {
-    getAllSweetPeppers(knex) {
-        return knex.select('*').from('sweetpeppers')
-    }
-}
+const SweetPepperService = {};
 
-module.exports = SweetPepperService
+module.exports = SweetPepperService;
