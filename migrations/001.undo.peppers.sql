@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS sweetpeppers;
-DROP TABLE IF EXISTS hotpeppers;
-DROP TABLE IF EXISTS crazypeppers;
-DROP TABLE IF EXISTS hybridpeppers;
+DROP TABLE IF EXISTS peppers;
+
+DROP TYPE IF EXISTS categories;
+
