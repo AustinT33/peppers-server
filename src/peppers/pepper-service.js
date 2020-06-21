@@ -35,6 +35,15 @@ const PepperService = {
       .where('id', id)
       .first()
   },
+  postPepper(knex, postPepper) {
+    return knex
+      .insert(postPepper)
+      .into('selected_pepper')
+      .returning('*')
+      .then(rows => {
+        return rows[0]
+      })
+  },
 };
 
 module.exports = PepperService;
